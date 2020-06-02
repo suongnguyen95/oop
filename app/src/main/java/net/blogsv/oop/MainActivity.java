@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements Action {
     }
 
     @Override
-    public void speed() {
+    public void move() {
 
     }
 }

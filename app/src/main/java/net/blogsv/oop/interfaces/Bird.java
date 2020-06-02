@@ -8,8 +8,7 @@ public class Bird implements Action {
     }
 
     @Override
-    public void speed() {
-        System.out.println("ffff");
+    public void move() {
 
     }
 }

@@ -9,4 +9,9 @@ public class Dog extends Animal {
     public void soud() {
         System.out.println("Gau gau");
     }
+
+    @Override
+    public void move() {
+        
+    }
 }

@@ -7,6 +7,7 @@ public abstract class Animal {
         this.name = name;
     }
     public abstract void soud();
+    public abstract void move();
     public void eat(){
         System.out.println("eating");
     }

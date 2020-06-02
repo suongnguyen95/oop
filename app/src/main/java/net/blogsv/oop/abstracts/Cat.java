@@ -7,6 +7,13 @@ public class Cat extends Animal {
 
     @Override
     public void soud() {
-        System.out.println("Meo meo");
+
     }
+
+    @Override
+    public void move() {
+
+    }
+
+
 }

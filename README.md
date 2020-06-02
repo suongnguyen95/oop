@@ -159,7 +159,55 @@ public class Student {
 
 Ở ví dụ ta có 3 cách khởi tạo Đối tượng Student.
 
--	Ghi đè(Overriding): là 2 phương thức có cùng tên, cùng tham số và kiểu trả về nhưng thằng con lại viết lại theo cách dùng cuả nó.
+-	Ghi đè(Overriding): là 2 phương thức có cùng tên, cùng tham số và kiểu trả về nhưng thằng con lại viết lại theo cách dùng của nó.
+Ví dụ:
+Animal.java
+public abstract class Animal {
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+    public abstract void soud();
+    public void eat(){
+        System.out.println("eating");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+}
+
+Cat.java
+public class Cat extends Animal {
+    public Cat(String name) {
+        super(name);
+    }
+
+    @Override
+    public void soud() {
+        System.out.println("Meo meo");
+    }
+}
+
+Dog.java
+public class Dog extends Animal {
+    public Dog(String name) {
+        super(name);
+    }
+
+    @Override
+    public void soud() {
+        System.out.println("Gau gau");
+    }
+}
+
+Cùng là method soud() những ở 2 class Cat và Dog khi override lại ta sẽ viết lại sao cho phù hợp với đối tượng. 
 
 III.	Ưu điểm: Với tính chất OOP đặc thù của mình cho nên ta có thể thấy:
 -	Khả năng mở rộng cao.
@@ -173,14 +221,14 @@ Interface và Abstract
 
 Interface
 -Không phải là một class.
--Chỉ chứa nhưng method/properties trống, không có thực thi.
+-Không thể định nghĩa code xử lý, chỉ có thể khai báo.
 -Nó giống như một khuôn mẫu, một khung để các lớp implement và follow
 -Các lớp có thể implements nhiều interface
 -Là một contract, các class implemnt phải triển khai các method theo như interface đã đinh nghĩa.
 -Mọi method/properties phải là public	
 
 Abstract:
--Có 2 loại method là abstract và method thường: abstract là method trống không có thực thi, method thường là method có thực thi.
+-Có thể định nghĩa thân phương thức, property.
 -Các lớp chỉ kế thừa một Abstract class.
 -Hướng đến tính năng và những tính năng có thực thi được sử dụng làm hàm chung cho các class extend.
 -Có thể xác định modifel

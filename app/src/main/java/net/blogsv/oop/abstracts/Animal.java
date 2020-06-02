@@ -1,6 +1,6 @@
-package net.blogsv.oop.model;
+package net.blogsv.oop.abstracts;
 
-public abstract class Animal implements Action {
+public abstract class Animal {
     private String name;
 
     public Animal(String name) {
@@ -19,13 +19,4 @@ public abstract class Animal implements Action {
         this.name = name;
     }
 
-    @Override
-    public void a() {
-
-    }
-
-    @Override
-    public void b() {
-
-    }
 }

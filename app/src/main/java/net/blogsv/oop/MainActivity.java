@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import net.blogsv.oop.model.Action;
-import net.blogsv.oop.model.Cat;
+import net.blogsv.oop.abstracts.Animal;
+import net.blogsv.oop.abstracts.Cat;
+import net.blogsv.oop.interfaces.Action;
 
 public class MainActivity extends AppCompatActivity implements Action {
 
@@ -14,18 +15,19 @@ public class MainActivity extends AppCompatActivity implements Action {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //
-        Cat cat= new Cat("Meo1");
+        Cat cat = new Cat("Meo1");
         cat.eat();
 //        cat.meow();
     }
 
+
     @Override
-    public void a() {
-        
+    public void eat() {
+
     }
 
     @Override
-    public void b() {
+    public void speed() {
 
     }
 }

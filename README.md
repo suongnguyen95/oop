@@ -171,25 +171,28 @@ III.	Ưu điểm: Với tính chất OOP đặc thù của mình cho nên ta có
 
 Interface và Abstract
 
-Interface	Abstract
--	Không phải là một class.
--	Chỉ chứa nhưng method/properties trống, không có thực thi.
--	Nó giống như một khuôn mẫu, một khung để các lớp implement và follow
--	Các lớp có thể implements nhiều interface
--	Là một contract, các class implemnt phải triển khai các method theo như interface đã đinh nghĩa.
--	Mọi method/properties phải là public	-	Có 2 loại method là abstract và method thường: abstract là method trống không có thực thi, method thường là method có thực thi.
--	Các lớp chỉ kế thừa một Abstract class.
--	Hướng đến tính năng và những tính năng có thực thi được sử dụng làm hàm chung cho các class extend.
--	Có thể xác định modifel
+Interface
+-Không phải là một class.
+-Chỉ chứa nhưng method/properties trống, không có thực thi.
+-Nó giống như một khuôn mẫu, một khung để các lớp implement và follow
+-Các lớp có thể implements nhiều interface
+-Là một contract, các class implemnt phải triển khai các method theo như interface đã đinh nghĩa.
+-Mọi method/properties phải là public	
+
+Abstract:
+-Có 2 loại method là abstract và method thường: abstract là method trống không có thực thi, method thường là method có thực thi.
+-Các lớp chỉ kế thừa một Abstract class.
+-Hướng đến tính năng và những tính năng có thực thi được sử dụng làm hàm chung cho các class extend.
+-Có thể xác định modifel
 
 Khi nào sử dụng chúng:
 
-Interface: Khi chúng ta cần xây dựng một khung khuôn mẫu các chức năng mà project phải bắt buộc phải có.
--	Định nghĩa các chức năng, các giá trị chung cho các lớp không có mỗi liên hệ với nhau
--	Tận dụng được đa kế thừa k có ở Class.
--	Muốn xác định các hành vi nhưng không quan tâm lớp nào sẽ thực thi chúng
+Interface: 
+-Định nghĩa các chức năng, các giá trị chung cho các lớp không có mỗi liên hệ với nhau
+-Tận dụng được đa kế thừa k có ở Class.
+-Muốn xác định các hành vi nhưng không quan tâm lớp nào sẽ thực thi chúng
 
 Abstract: 
--	Muốn chia sẽ code giữa các lớp trong quan hệ kế thừa
--	Muốn lớp này cũng chứa cả các thành phần private, protected
--	Muốn lớp này chứa các thành phần khác static, final 
+-Muốn chia sẽ code giữa các lớp trong quan hệ kế thừa
+-Muốn lớp này cũng chứa cả các thành phần private, protected
+-Muốn lớp này chứa các thành phần khác static, final 

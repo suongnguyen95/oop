@@ -1,7 +1,6 @@
-package net.blogsv.oop.model;
+package net.blogsv.oop.abstracts;
 
-public class Cat extends Animal implements Action {
-
+public class Cat extends Animal {
     public Cat(String name) {
         super(name);
     }
@@ -10,5 +9,4 @@ public class Cat extends Animal implements Action {
     public void soud() {
         System.out.println("Meo meo");
     }
-
 }
